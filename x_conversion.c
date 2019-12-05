@@ -24,6 +24,17 @@ int conver(int a)
     return (res);
 }
 
+int ft_x_len(unsigned int n)
+{
+    int res;
+
+    res = 0;
+    if (n / 16 != 0)
+        res += ft_x_len(n/16);
+    res += 1;
+    return (res);
+}
+
 int ft_x_conversion(unsigned int n)
 {
     int res;

@@ -17,5 +17,6 @@ int    ft_x_conversion(unsigned int a);
 int    ft_xx_conversion(unsigned int a);
 int		ft_atoi(const char *str);
 int    ft_0_flag(const char **s, va_list vl);
+int     ft_x_len(unsigned int);
 
 #endif

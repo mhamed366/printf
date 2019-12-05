@@ -79,17 +79,17 @@ int ft_printf(const char *sd, ...)
 int main()
 {
     //printf("%c\n%c\n",'a','a');
-    unsigned int a = -1;
-    int kk = 2147483647;
+    unsigned int a = 2147483647;
+    int kk = 55555;
     char c = 'a';
     char d = 'b';
-    char *s = " mhamed ";
+    char *s = "mhamed";
     const char *s1 = " kchikech ";
     char const *s2 = " midokchi ";
     //char const *s3 = "aa";
     printf("%zu  %p\n",(size_t)s2,s2);
     unsigned int as = 2147483647;
-    ft_printf("%c%c%s%s%ssss%d %p  %u %X %% |%020d||%015u|\n",c,d,s,s1,s2,+2147483647,s,a,as,kk,a);
-       printf("%c%c%s%s%ssss%d %p  %u %X %% |%020d||%015u|\n",c,d,s,s1,s2,+2147483647,s,a,as,kk,a);
+    ft_printf("%c%c%s%s%ssss%d %p  %u %X %% |%020u||%015u||%09.2d|\n",c,d,s,s1,s2,+2147483647,s,a,as,kk,a,kk);
+       printf("%c%c%s%s%ssss%d %p  %u %X %% |%020u||%015u||%09.2d|\n",c,d,s,s1,s2,+2147483647,s,a,as,kk,a,kk);
        printf("\nssss%-1ss\n","aaaa");
 }
